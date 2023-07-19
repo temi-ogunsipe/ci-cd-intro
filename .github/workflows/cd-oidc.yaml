@@ -34,9 +34,9 @@ jobs:
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@05b148adc31e091bafbaf404f745055d4d3bc9d2
       with:
-        role-to-assume: arn:aws:iam::730880032795:role/OIDC_Link--EB-deployment
+        role-to-assume: arn:aws:iam::338454737685:role/OIDC-EB-Deployment
         role-session-name: ElasticBeanstalkDeployment
-        aws-region: eu-west-2
+        aws-region: us-east-2
 
     - name: Deploy changes
       run: |
